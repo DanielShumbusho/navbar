@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "322631850552",
+    "project_id": "navbar-adad8",
+    "storage_bucket": "navbar-adad8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322631850552:android:8b74303ed6512a0f4064cd",
+        "android_client_info": {
+          "package_name": "com.example.navbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322631850552-ruv7b238hl702v1p5nauva2829ksinat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcg4uHbgfGmL8Qfztzlmu456JB2P9RLk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322631850552-ruv7b238hl702v1p5nauva2829ksinat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
