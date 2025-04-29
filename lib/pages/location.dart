@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart' as gmap;
 import 'package:geofencing_api/geofencing_api.dart';
-import 'package:geofencing_flutter_plugin/geofencing_flutter_plugin.dart';
 
 
 import '../Db_helpers/location_db.dart';
@@ -10,6 +9,7 @@ class MapInputScreen extends StatefulWidget {
   @override
   _MapInputScreenState createState() => _MapInputScreenState();
 }
+//Geofencing callback and manager
 
 
 class _MapInputScreenState extends State<MapInputScreen> {
@@ -59,6 +59,8 @@ class _MapInputScreenState extends State<MapInputScreen> {
       SnackBar(content: Text("Location Saved: $_pickedLocation")),
     );
   }
+
+
 
   @override
   Widget build(BuildContext context) {

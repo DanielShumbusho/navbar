@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:geofencing_flutter_plugin/geofencing_flutter_plugin.dart';
 import 'package:navbar/pages/home_page.dart';
+import 'package:navbar/pages/location.dart';
 import 'package:provider/provider.dart';
 import 'auth/auth_provider.dart';
 import 'auth/auth_gate.dart';

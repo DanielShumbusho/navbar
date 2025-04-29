@@ -18,6 +18,12 @@
         android:label="navbar"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <receiver android:name="com.intive.geofencing.GeofenceBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.intive.geofencing.TRANSITION_RECEIVER_ACTION"/>
+            </intent-filter>
+        </receiver>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyB6jUjgr6qIUeM9bzSsNp1mgXt4oUKiYP0"/>
