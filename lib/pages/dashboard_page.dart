@@ -3,13 +3,16 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:navbar/pages/pedometer.dart';
 import 'package:navbar/pages/shoppingpage.dart';
 import 'package:provider/provider.dart';
 import 'package:navbar/auth/auth_provider.dart';
 import '../auth/sign_in_page.dart';
+import 'Settings.dart';
 import 'calculator_page.dart';
 import 'contacts.dart';
 import 'gallery.dart';
+import 'geofence.dart';
 import 'location.dart';
 import 'profile_page.dart';
 import 'settings_page.dart';
@@ -143,7 +146,7 @@ class _DashboardPageState extends State<DashboardPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SettingsPage()),
+                  MaterialPageRoute(builder: (context) => SettingsScreen()),
                 );
               },
             ),
@@ -164,6 +167,26 @@ class _DashboardPageState extends State<DashboardPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => GalleryScreen()),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.hiking),
+              title: Text("Pedometer"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => StepDistanceSpeedScreen()),
+                );
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.map),
+              title: Text("Geofence"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GeofenceScreen()),
                 );
               },
             ),
